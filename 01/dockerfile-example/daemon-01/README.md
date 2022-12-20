@@ -13,6 +13,6 @@ docker run -d -p 8080:8080 httpserver:0.0.1
 ```
 5、推送到远程镜像仓库    
 ```shell
-// 默认推送到 dockerhub 
+# 默认推送到 dockerhub 
 docker push xxx/httpserver:0.0.1
 ```

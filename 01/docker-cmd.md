@@ -1,7 +1,7 @@
 
 ### Docker 常用命令
 
-1、docker 基础命令
+#### 1、docker 基础命令
 1) 启动 docker 
 ```shell
 systemctl start docker
@@ -32,7 +32,7 @@ docker info
 docker --help
 ```
 
-2、docker 镜像命令
+#### 2、docker 镜像命令
 1) 查看镜像列表
 ```shell
 docker images
@@ -74,7 +74,7 @@ docker load -i image_path
 docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 ```
 
-3、docker 容器命令
+#### 3、docker 容器命令
 1) 查看运行的容器列表
 ```shell
 docker ps -a
@@ -120,7 +120,7 @@ docker cp 容器外路径 containerID/名称: 容器内路径
 docker logs -f --tail=要查看末尾多少行 默认all containerID
 ```
 
-4、docker 运维命令
+#### 4、docker 运维命令
 1) 查看 docker 工作目录
 ```shell
 docker info | grep "Docker Root Dir"
