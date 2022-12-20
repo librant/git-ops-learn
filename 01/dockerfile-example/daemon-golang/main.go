@@ -32,6 +32,7 @@ func mainIndex(w http.ResponseWriter, r *http.Request) {
 	}
 	w.Header().Add("systemEnv", os.Getenv("GOPATH"))
 	cliIP := clientIP(r)
+	w.Write([]byte(fmt.Sprintf("cliIP: %s", cliIP)))
 	log.Printf("Success! Response code: %d client ip: %s", http.StatusOK, cliIP)
 }
 
