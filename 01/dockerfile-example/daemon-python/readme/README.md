@@ -51,6 +51,16 @@ docker run -d -p 6379:80 --name redis-test redis
 docker run -d --name python-test -p 5080:80 --link redis-test:redis python-librant-test
 ```
 
-- 再次刷线浏览器， 可以看到链接上 redis 
+- 再次刷线浏览器， 可以看到链接上 redis
+
 ![img_7.png](img_7.png)
+
+5) 环境清理
+```shell
+docker container ls -a
+docker stop 20ca688a14c1 72d4d1c18106 
+docker container rm 72d4d1c18106 20ca688a14c1
+```
+
+---
 
