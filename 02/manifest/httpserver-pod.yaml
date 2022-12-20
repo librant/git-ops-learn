@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpserver-test
+spec:
+  containers:
+    - name: httpserver
+      image: librant/httpserver:v0.0.1
+      ports:
+        - containerPort: 8080
