@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: httpserver-test
+spec:
+  selector:
+    app: httpserver-test
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080

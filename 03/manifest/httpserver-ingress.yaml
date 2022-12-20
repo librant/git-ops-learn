@@ -1,0 +1,10 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: httpserver-test
+spec:
+  defaultBackend:
+    service:
+      name: httpserver-test
+      port:
+        number: 8080
