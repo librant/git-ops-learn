@@ -14,6 +14,8 @@ gitOps 学习
 
 **第三讲：K8s 如何实现自动扩容和自愈**
 
+**第四讲：GitOps 实现应用秒级自动发布和回滚**
+
 ---
 参考文档：
 - https://blog.csdn.net/zfw_666666/article/details/126158696

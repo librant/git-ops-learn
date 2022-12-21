@@ -1,0 +1,28 @@
+kind: Deployment
+metadata:
+  name: httpserver-test
+  labels:
+    app: httpserver-test
+    version: v1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: httpserver-test
+  template:
+    metadata:
+      labels:
+        app: httpserver-test
+    spec:
+      containers:
+        - name: httpserver
+          image: librant/httpserver:v0.0.2
+          resources:
+            requests:
+              memory: "100Mi"
+              cpu: "100m"
+            limits:
+              memory: "100Mi"
+              cpu: "100m"
+          ports:
+            - containerPort: 8080
